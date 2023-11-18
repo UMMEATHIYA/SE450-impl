@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset name="Combined Ruleset"
+         xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 http://pmd.sourceforge.net/ruleset_2_0_0.xsd">
+
+    <description>
+        Combined ruleset including custom ruleset and others.
+    </description>
+
+    <!-- Reference the custom ruleset using relative path -->
+
+    <!-- Basic rules for Java code -->
+
+    <!-- Before -->
+    <rule ref="category/java/codestyle.xml/FinalParameterInAbstractMethod"/>
+
+    <!-- After (if an updated rule is available) -->
+    <rule ref="category/java/migrating.xml/FinalParameterInAbstractMethod"/>
+
+    <rule ref="category/java/bestpractices.xml/AvoidMessageDigestField"/>
+    <rule ref="category/java/bestpractices.xml/AvoidStringBufferField"/>
+    <rule ref="category/java/bestpractices.xml/ConstantsInInterface"/>
+    <rule ref="category/java/bestpractices.xml/DefaultLabelNotLastInSwitchStmt"/>
+    <rule ref="category/java/bestpractices.xml/DoubleBraceInitialization"/>
+    <rule ref="category/java/bestpractices.xml/ForLoopCanBeForeach"/>
+    <rule ref="category/java/bestpractices.xml/GuardLogStatement"/>
+
+    <rule ref="category/java/bestpractices.xml/LiteralsFirstInComparisons" />
+    <rule ref="category/java/bestpractices.xml/LooseCoupling"/>
+
+    <!-- <rule ref="category/java/bestpractices.xml/ReplaceEnumerationWithIterator" /> -->
+    <!-- <rule ref="category/java/bestpractices.xml/ReplaceHashtableWithMap" /> -->
+    <!-- <rule ref="category/java/bestpractices.xml/ReplaceVectorWithList" /> -->
+    <rule ref="category/java/bestpractices.xml/SimplifiableTestAssertion"/>
+    <rule ref="category/java/bestpractices.xml/SwitchStmtsShouldHaveDefault"/>
+    <!-- <rule ref="category/java/bestpractices.xml/SystemPrintln" /> -->
+    <!-- <rule ref="category/java/bestpractices.xml/UnusedAssignment"/> -->
+    <rule ref="category/java/bestpractices.xml/UnusedFormalParameter"/>
+    <rule ref="category/java/bestpractices.xml/UnusedLocalVariable"/>
+    <rule ref="category/java/bestpractices.xml/UnusedPrivateField"/>
+    <rule ref="category/java/bestpractices.xml/UnusedPrivateMethod"/>
+    <rule ref="category/java/bestpractices.xml/UseCollectionIsEmpty"/>
+    <rule ref="category/java/bestpractices.xml/UseStandardCharsets" />
+    <!-- <rule ref="category/java/bestpractices.xml/UseTryWithResources" /> -->
+    <!-- <rule ref="category/java/bestpractices.xml/UseVarargs" /> -->
+    <!-- <rule ref="category/java/bestpractices.xml/WhileLoopWithLiteralBoolean" /> -->
+
+
+    <!-- NAMING CONVENTIONS -->
+    <rule ref="category/java/codestyle.xml/ClassNamingConventions"/>
+    <!--<rule ref="category/java/codestyle.xml/FieldNamingConventions" />-->
+    <rule ref="category/java/codestyle.xml/FormalParameterNamingConventions"/>
+    <rule ref="category/java/codestyle.xml/GenericsNaming"/>
+    <!-- <rule ref="category/java/codestyle.xml/LinguisticNaming" /> -->
+    <rule ref="category/java/codestyle.xml/LocalVariableNamingConventions"/>
+    <!-- <rule ref="category/java/codestyle.xml/LongVariable" /> -->
+    <rule ref="category/java/codestyle.xml/MethodNamingConventions"/>
+    <rule ref="category/java/codestyle.xml/PackageCase"/>
+    <!-- <rule ref="category/java/codestyle.xml/ShortClassName" /> -->
+    <!-- <rule ref="category/java/codestyle.xml/ShortMethodName" /> -->
+    <!-- <rule ref="category/java/codestyle.xml/ShortVariable" /> -->
+
+    <!-- <rule ref="category/java/codestyle.xml/LocalHomeNamingConvention" /> -->
+    <!-- <rule ref="category/java/codestyle.xml/LocalInterfaceSessionNamingConvention" /> -->
+    <!-- <rule ref="category/java/codestyle.xml/MDBAndSessionBeanNamingConvention" /> -->
+    <!-- <rule ref="category/java/codestyle.xml/RemoteInterfaceNamingConvention" /> -->
+    <!-- <rule ref="category/java/codestyle.xml/RemoteSessionInterfaceNamingConvention" /> -->
+
+    <!-- OTHER -->
+    <!-- <rule ref="category/java/codestyle.xml/AtLeastOneConstructor" /> -->
+    <rule ref="category/java/codestyle.xml/AvoidDollarSigns"/>
+    <rule ref="category/java/codestyle.xml/AvoidProtectedFieldInFinalClass"/>
+    <rule ref="category/java/codestyle.xml/AvoidProtectedMethodInFinalClassNotExtending"/>
+    <!-- <rule ref="category/java/codestyle.xml/AvoidUsingNativeCode"/>-->
+    <!-- <rule ref="category/java/codestyle.xml/BooleanGetMethodName" /> -->
+    <!-- <rule ref="category/java/codestyle.xml/CallSuperInConstructor" /> -->
+    <!-- <rule ref="category/java/codestyle.xml/CommentDefaultAccessModifier" /> -->
+    <!-- <rule ref="category/java/codestyle.xml/ConfusingTernary" /> -->
+    <rule ref="category/java/codestyle.xml/ControlStatementBraces"/>
+    <!-- <rule ref="category/java/codestyle.xml/EmptyMethodInAbstractClassShouldBeAbstract" /> -->
+    <!-- <rule ref="category/java/codestyle.xml/FieldDeclarationsShouldBeAtStartOfClass" /> -->
+    <rule ref="category/java/codestyle.xml/FinalParameterInAbstractMethod"/>
+    <rule ref="category/java/codestyle.xml/ForLoopShouldBeWhileLoop"/>
+    <rule ref="category/java/codestyle.xml/IdenticalCatchBranches"/>
+    <!-- <rule ref="category/java/codestyle.xml/LocalVariableCouldBeFinal" /> -->
+    <!-- <rule ref="category/java/codestyle.xml/MethodArgumentCouldBeFinal" /> -->
+    <rule ref="category/java/codestyle.xml/NoPackage"/>
+    <!-- <rule ref="category/java/codestyle.xml/UseUnderscoresInNumericLiterals" /> -->
+    <!-- <rule ref="category/java/codestyle.xml/OnlyOneReturn" /> -->
+    <!-- <rule ref="category/java/codestyle.xml/PrematureDeclaration" /> -->
+    <!-- <rule ref="category/java/codestyle.xml/TooManyStaticImports" /> -->
+    <rule ref="category/java/codestyle.xml/UnnecessaryAnnotationValueElement"/>
+    <!-- <rule ref="category/java/codestyle.xml/UnnecessaryBoxing" /> -->
+    <!-- <rule ref="category/java/codestyle.xml/UnnecessaryCast" /> -->
+    <rule ref="category/java/codestyle.xml/UnnecessaryConstructor"/>
+    <rule ref="category/java/codestyle.xml/UnnecessaryFullyQualifiedName"/>
+    <rule ref="category/java/codestyle.xml/UnnecessaryImport" />
+    <rule ref="category/java/codestyle.xml/UnnecessaryLocalBeforeReturn"/>
+    <rule ref="category/java/codestyle.xml/UnnecessaryModifier"/>
+    <rule ref="category/java/codestyle.xml/UnnecessaryReturn"/>
+    <!-- <rule ref="category/java/codestyle.xml/UseDiamondOperator" /> -->
+    <rule ref="category/java/codestyle.xml/UselessParentheses"/>
+    <rule ref="category/java/codestyle.xml/UselessQualifiedThis"/>
+
+
+    <rule ref="category/java/design.xml/AbstractClassWithoutAnyMethod"/>
+    <!-- <rule ref="category/java/design.xml/AvoidCatchingGenericException" /> -->
+    <!-- <rule ref="category/java/design.xml/AvoidDeeplyNestedIfStmts" /> -->
+    <!-- <rule ref="category/java/design.xml/AvoidRethrowingException" /> -->
+    <!-- <rule ref="category/java/design.xml/AvoidThrowingNewInstanceOfSameException" /> -->
+    <!--<rule ref="category/java/design.xml/AvoidThrowingNullPointerException" />-->
+    <!-- <rule ref="category/java/design.xml/AvoidThrowingRawExceptionTypes" /> -->
+    <!-- <rule ref="category/java/design.xml/AvoidUncheckedExceptionsInSignatures" /> -->
+    <rule ref="category/java/design.xml/ClassWithOnlyPrivateConstructorsShouldBeFinal"/>
+    <!-- <rule ref="category/java/design.xml/CognitiveComplexity" /> -->
+    <!-- <rule ref="category/java/design.xml/CollapsibleIfStatements"/>-->
+    <!-- <rule ref="category/java/design.xml/CouplingBetweenObjects" /> -->
+    <!-- <rule ref="category/java/design.xml/CyclomaticComplexity" /> -->
+    <!-- <rule ref="category/java/design.xml/DataClass" /> -->
+    <rule ref="category/java/design.xml/DoNotExtendJavaLangError" />
+    <!-- <rule ref="category/java/design.xml/ExceptionAsFlowControl" /> -->
+    <!-- <rule ref="category/java/design.xml/ExcessiveImports" /> -->
+    <!-- <rule ref="category/java/design.xml/ExcessiveParameterList" /> -->
+    <!-- <rule ref="category/java/design.xml/ExcessivePublicCount" /> -->
+    <rule ref="category/java/design.xml/FinalFieldCouldBeStatic"/>
+    <!-- <rule ref="category/java/design.xml/GodClass" /> -->
+    <!-- <rule ref="category/java/design.xml/ImmutableField" /> -->
+    <!-- <rule ref="category/java/design.xml/InvalidJavaBean">-->
+    <!--     <properties>-->
+    <!--         <property name="packages" value="org.example.beans" />-->
+    <!--     </properties>-->
+    <!-- </rule>-->
+    <!-- <rule ref="category/java/design.xml/LawOfDemeter" /> -->
+    <rule ref="category/java/design.xml/LogicInversion"/>
+    <!-- <rule ref="category/java/design.xml/LoosePackageCoupling"> -->
+    <!--     <properties> -->
+    <!--         <property name="packages" value="org.sample,org.sample2" /> -->
+    <!--         <property name="classes" value="org.sample.SampleInterface,org.sample2.SampleInterface" /> -->
+    <!--     </properties> -->
+    <!-- </rule> -->
+    <!-- <rule ref="category/java/design.xml/MutableStaticState" /> -->
+    <!-- <rule ref="category/java/design.xml/NcssCount" /> -->
+    <!-- <rule ref="category/java/design.xml/NPathComplexity" /> -->
+    <!-- <rule ref="category/java/design.xml/SignatureDeclareThrowsException" /> -->
+    <rule ref="category/java/design.xml/SimplifiedTernary"/>
+    <!-- <rule ref="category/java/design.xml/SimplifyBooleanExpressions" /> -->
+    <rule ref="category/java/design.xml/SimplifyBooleanReturns"/>
+    <rule ref="category/java/design.xml/SimplifyConditional"/>
+    <rule ref="category/java/design.xml/SingularField"/>
+    <!-- <rule ref="category/java/design.xml/SwitchDensity" /> -->
+    <!-- <rule ref="category/java/design.xml/TooManyFields" /> -->
+    <!-- <rule ref="category/java/design.xml/TooManyMethods" /> -->
+    <rule ref="category/java/design.xml/UselessOverridingMethod"/>
+    <!-- <rule ref="category/java/design.xml/UseObjectForClearerAPI" /> -->
+    <rule ref="category/java/design.xml/UseUtilityClass"/>
+
+
+    <!-- <rule ref="category/java/documentation.xml/CommentContent" /> -->
+    <!-- <rule ref="category/java/documentation.xml/CommentRequired" /> -->
+    <!-- <rule ref="category/java/documentation.xml/CommentSize" /> -->
+    <rule ref="category/java/documentation.xml/UncommentedEmptyConstructor"/>
+    <rule ref="category/java/documentation.xml/UncommentedEmptyMethodBody"/>
+
+</ruleset>

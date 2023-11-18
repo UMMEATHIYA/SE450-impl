@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset name="Java Migrating Rules"
+         xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 http://pmd.sourceforge.net/ruleset_2_0_0.xsd">
+
+    <description>
+        Rules for migrating Java code.
+    </description>
+
+    <!-- Rule: UseDiamondOperator -->
+    <rule name="UseDiamondOperator"
+          language="java"
+          message="Use diamond operator ('&lt;&gt;') for improved readability."
+          class="net.sourceforge.pmd.rules.java.UseDiamondOperatorRule">
+        <priority>3</priority>
+        <example>
+            <![CDATA[
+        // Bad: verbose instantiation
+        List<String> myList = new ArrayList<String>();
+
+        // Good: use diamond operator
+        List<String> myList = new ArrayList<>();
+        ]]>
+        </example>
+    </rule>
+    <!-- Example Updated Rule Reference -->
+    <rule ref="category/java/migrating.xml/FinalParameterInAbstractMethod"/>
+
+
+
+    <!-- Add more rules as needed -->
+
+</ruleset>
